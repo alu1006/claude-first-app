@@ -14,7 +14,7 @@
 - **前端**: HTML5 + Bootstrap 5 + Vanilla JavaScript  
 - **資料格式**: JSON (由Excel轉換而來)
 - **部署**: GitHub Pages
-- **自訂域名**: essays.codinglu.tw
+- **自訂域名**: high-school-essays.codinglu.tw
 
 ## 資料來源
 
@@ -27,7 +27,7 @@
 
 ## 網站設定
 
-網站使用GitHub Pages自動部署，透過CNAME檔案設定自訂域名 essays.codinglu.tw
+網站使用GitHub Pages自動部署，透過CNAME檔案設定自訂域名 high-school-essays.codinglu.tw
 
 ## 更新資料
 
