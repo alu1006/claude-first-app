@@ -293,7 +293,7 @@
         // Setup period filter
         function setupPeriodFilter() {
             const select = document.getElementById('periodFilter');
-            const periods = [...new Set(allEssays.map(essay => essay.competition_period))].sort().reverse();
+            const periods = [...new Set(allEssays.map(essay => essay.competition_period))].sort((a, b) => b - a);
             
             periods.forEach(period => {
                 const option = document.createElement('option');
@@ -327,8 +327,8 @@
                     essay.school.toLowerCase().includes(searchTerm) ||
                     essay.supervisor.toLowerCase().includes(searchTerm);
                 
-                // Period filter
-                const matchesPeriod = !selectedPeriod || essay.competition_period === selectedPeriod;
+                // Period filter (convert both to string for comparison)
+                const matchesPeriod = !selectedPeriod || String(essay.competition_period) === String(selectedPeriod);
                 
                 // Category filter
                 const matchesCategory = !selectedCategory || essay.category === selectedCategory;
